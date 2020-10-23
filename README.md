@@ -5,7 +5,6 @@ Helm is a popular tool to manager the lifecyle to Kubernertes applications.
 
 ## Prerequisites
 - Install [Helm](https://docs.helm.sh/using_helm/#installing-helm)
-- tl;dr `brew install kubernetes-helm && helm init --client-only`
 
 ## Configuring the charts repository
 ```bash
