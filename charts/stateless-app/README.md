@@ -39,6 +39,7 @@ helm install [RELEASE_NAME] wmaramos/stateless-app
 | podAnnotations                                | Annotations to Pod                                                        | {}           | no       |
 | podSecurity                                   | Security Context definition in Pod                                        | {}           | no       |
 | securityContext                               | Security Context definition in Container                                  | {}           | no       |
+| envs                                          | Map containing env vars to be exported                                    | {}           | no       |
 | service.type                                  | Define type of the service                                                | ClusterIP    | no       |
 | service.port                                  | Port used by the service                                                  | 80           | no       |
 | ingress.enabled                               | Enable ingress                                                            | false        | no       |
@@ -46,6 +47,8 @@ helm install [RELEASE_NAME] wmaramos/stateless-app
 | ingress.hosts                                 | Host and route definitions, required when ingress is enabled              | []           | no       |
 | ingress.tls                                   | TLS settings to ingress                                                   | []           | no       |
 | resources                                     | Map containing settings to limit resources                                | {}           | no       |
+| livenessProbe                                 | livenessProbe settings                                                    | {}           | no       |
+| readinessProbe                                | readinessProbe settings                                                   | {}           | no       |
 | autoscaling.enabled                           | Enable HPA                                                                | true         | no       |
 | autoscaling.minReplicas                       | Minimal number of replicas                                                | 1            | no       |
 | autoscaling.maxReplicas                       | Maximum number of replicas                                                | 10           | no       |
